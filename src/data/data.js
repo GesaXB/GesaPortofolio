@@ -8,7 +8,8 @@ export const experienceData = [
       "Specializing in accessibility, contributing to UI components that power Klaviyo's frontend",
       "Ensuring platform meets web accessibility standards for inclusive user experience",
       "Collaborating with design teams to implement pixel-perfect interfaces"
-    ]
+    ],
+    tech: ["JavaScript", "TypeScript", "React", "Storybook"]
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ export const experienceData = [
       "Built responsive, accessible websites for clients across various industries",
       "Worked closely with designers to implement custom animations and interactions",
       "Optimized frontend performance for faster load times"
-    ]
+    ],
+    tech: ["React", "Next.js", "GSAP", "Tailwind CSS"]
   }
 ];
 
@@ -39,3 +41,5 @@ export const projectData = [
     link: "#"
   }
 ];
+
+

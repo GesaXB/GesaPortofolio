@@ -10,12 +10,12 @@ export default function AboutSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <span className="text-green-400 text-2xl font-mono mr-4">01.</span>
-          <h2 className="text-3xl font-bold text-gray-100">About Me</h2>
+          <span className="text-primary-white text-2xl font-mono mr-4">01.</span>
+          <h2 className="text-3xl font-bold text-gray-100">About <span className="text-green-400">Me</span></h2>
           <div className="ml-6 h-px bg-gray-800 flex-1"></div>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-2 gap-12">
           <motion.div
             className="space-y-6 text-gray-400 md:col-span-2"
             initial={{ opacity: 0, y: 20 }}
@@ -24,13 +24,13 @@ export default function AboutSection() {
             transition={{ duration: 0.6 }}
           >
             <p>
-              I'm a frontend engineer with 5+ years of experience specializing in building accessible,
+              i'm a<span className="text-primary-white"> Junior Fullstack Developer</span> with 5+ years of experience specializing in building accessible,
               high-performance web applications. My passion lies in creating interfaces that are not
               only visually stunning but also intuitive and inclusive for all users.
             </p>
 
             <p>
-              Currently at <span className="text-green-400">Klaviyo</span>, I lead accessibility initiatives
+              Currently at <span className="text-primary-white">Klaviyo</span>, I lead accessibility initiatives
               across our design system, ensuring our components meet WCAG 2.1 AA standards and
               provide an exceptional experience for all users regardless of ability.
             </p>
@@ -68,21 +68,6 @@ export default function AboutSection() {
                     <span className="text-gray-400 text-sm">{tech}</span>
                   </div>
                 ))}
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="relative"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-          >
-            <div className="relative w-full h-64 md:h-full rounded-lg overflow-hidden border border-gray-800">
-              {/* Placeholder for profile image */}
-              <div className="absolute inset-0 bg-gray-800/50 flex items-center justify-center">
-                <span className="text-gray-400">Profile Image</span>
               </div>
             </div>
           </motion.div>
