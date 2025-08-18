@@ -24,49 +24,90 @@ export default function AboutSection() {
             transition={{ duration: 0.6 }}
           >
             <p>
-              i'm a<span className="text-primary-white"> Junior Fullstack Developer</span> with 5+ years of experience specializing in building accessible,
-              high-performance web applications. My passion lies in creating interfaces that are not
-              only visually stunning but also intuitive and inclusive for all users.
+              Hello! I'm <span className="text-primary-white">Geisha Lutfan Waldhani</span>, a passionate
+              <span className="text-primary-white"> aspiring Fullstack Developer</span> currently in my final year at
+              <span className="text-primary-white"> SMK Telkom</span> with a focus on
+              <span className="text-primary-white"> Software Engineering (RPL)</span>.
+              My journey in web development began with school projects and has grown into a genuine passion.
             </p>
 
             <p>
-              Currently at <span className="text-primary-white">Klaviyo</span>, I lead accessibility initiatives
-              across our design system, ensuring our components meet WCAG 2.1 AA standards and
-              provide an exceptional experience for all users regardless of ability.
+              Though early in my professional journey, I've developed solid foundations in
+              <span className="text-primary-white"> modern web technologies</span> through coursework and personal projects.
+              I particularly enjoy the creative problem-solving aspect of development and
+              the satisfaction of bringing ideas to life through code.
             </p>
 
             <p>
-              My technical expertise spans modern JavaScript frameworks, performance optimization,
-              and responsive design principles. I particularly enjoy working at the intersection
-              of design and engineering, bridging the gap between pixel-perfect visuals and
-              robust, maintainable code.
+              When I'm not coding, you'll find me immersed in
+              <span className="text-primary-white"> webtoons</span>, discovering new stories, or
+              <span className="text-primary-white"> gaming</span> - which actually sparked my interest in
+              interactive digital experiences. These hobbies inspire me to create engaging,
+              user-friendly web applications.
             </p>
 
             <p>
-              Beyond coding, I'm an advocate for inclusive design, regularly speaking at conferences
-              and writing about accessibility best practices. When not at my desk, you'll find me
-              rock climbing, experimenting with new cooking recipes, or exploring the outdoors.
+              I'm eager to continue growing my skills through real-world experience and
+              collaboration with other developers. My goal is to contribute to meaningful
+              projects while constantly expanding my technical knowledge.
             </p>
 
             <div className="pt-6">
-              <h3 className="text-gray-300 font-medium mb-4">Technologies I work with:</h3>
+              <h3 className="text-gray-300 font-medium mb-4">Technologies I'm learning:</h3>
               <div className="grid grid-cols-2 gap-2">
                 {[
-                  "JavaScript (ES6+)",
-                  "TypeScript",
+                  "JavaScript",
                   "React",
-                  "Next.js",
                   "Node.js",
+                  "Solidty",
+                  "Laravel",
+                  "MongoDB",
                   "Tailwind CSS",
-                  "GraphQL",
-                  "Storybook",
-                  "Jest",
-                  "Cypress"
+                  "Git/GitHub",
+                  "Figma",
+                  "Python"
                 ].map((tech, i) => (
-                  <div key={i} className="flex items-center">
-                    <span className="text-green-400 mr-2">▹</span>
-                    <span className="text-gray-400 text-sm">{tech}</span>
-                  </div>
+                  <motion.div
+                    key={i}
+                    className="flex items-center overflow-hidden"
+                    whileHover={{
+                      x: 4,
+                      transition: {
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 15
+                      }
+                    }}
+                  >
+                    <motion.span
+                      className="text-green-400 mr-2"
+                      initial={{ x: 0 }}
+                      whileHover={{
+                        x: -4,
+                        transition: {
+                          type: "spring",
+                          stiffness: 300,
+                          damping: 15
+                        }
+                      }}
+                    >
+                      ▹
+                    </motion.span>
+                    <motion.span
+                      className="text-gray-400 text-sm"
+                      initial={{ x: 0 }}
+                      whileHover={{
+                        x: 8,
+                        transition: {
+                          type: "spring",
+                          stiffness: 300,
+                          damping: 15
+                        }
+                      }}
+                    >
+                      {tech}
+                    </motion.span>
+                  </motion.div>
                 ))}
               </div>
             </div>

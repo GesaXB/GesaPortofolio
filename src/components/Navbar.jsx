@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Helmet } from 'react-helmet';
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 export default function Navbar() {
@@ -68,6 +69,18 @@ export default function Navbar() {
 
   return (
     <div className="flex flex-col justify-between h-full p-10">
+      <Helmet>
+        <title>Gesha Lutfan | Full Stack Developer Portfolio</title>
+        <meta
+          name="description"
+          content="Professional portfolio of Gesha Lutfan Waldhani, showcasing skills in React, JavaScript, and full stack development projects."
+        />
+        <meta
+          name="keywords"
+          content="full stack developer, web developer portfolio, React developer, JavaScript expert, frontend developer, backend developer"
+        />
+      </Helmet>
+
       <motion.div
         initial="hidden"
         animate="visible"
@@ -102,7 +115,7 @@ export default function Navbar() {
             visible: { opacity: 1 }
           }}
         >
-          Junior Full Stack Developer
+          Full Stack Developer & JavaScript Specialist
         </motion.h2>
 
         <motion.p
@@ -112,7 +125,7 @@ export default function Navbar() {
             visible: { opacity: 1 }
           }}
         >
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Creating responsive, performant web applications with modern technologies including React, Node.js, and MongoDB. Passionate about clean code and intuitive user experiences.
         </motion.p>
 
         <nav className="space-y-2">
@@ -136,6 +149,7 @@ export default function Navbar() {
                   }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleNavClick(item)}
+                  aria-label={`Navigate to ${item} section`}
                 >
                   <motion.span
                     className="absolute left-0 top-1/2 -translate-y-1/2 text-gray-400"
@@ -206,7 +220,7 @@ export default function Navbar() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          Built with React & Tailwind
+          Built with React & Tailwind CSS | Optimized for performance and accessibility
         </motion.p>
       </motion.div>
     </div>
