@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { projectData } from "../data/data";
 
 export default function ProjectsSection() {
@@ -33,8 +34,8 @@ export default function ProjectsSection() {
         >
           Each project showcases my expertise in <span className="text-primary-white">full-stack development</span> and problem-solving abilities.
           From <span className="text-primary-white">web applications</span> to <span className="text-primary-white">data visualization</span> tools,
-          these works demonstrate my proficiency with modern technologies and commitment to <span className="text-primary-white">clean code</span>
-          and <span className="text-primary-white">user-centric design</span>.
+          these works demonstrate my proficiency with modern technologies and commitment to <span className="text-primary-white">clean code </span>
+          and <span className="text-primary-white">user-centric design</span>. <span className="text-green-400 underline cursor-pointer"><Link to="/project">See all</Link></span>
         </motion.p>
       </motion.div>
 
