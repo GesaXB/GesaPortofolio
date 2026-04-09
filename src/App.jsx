@@ -5,6 +5,7 @@ import { Project } from "./pages/Project"
 function App() {
   return(
     <Routes>
+      <Route path="/" element={<Home/>}/>
       <Route path="/GesaPortofolio" element={<Home/>}/>
       <Route path="/project" element={<Project/>}/>
     </Routes>
