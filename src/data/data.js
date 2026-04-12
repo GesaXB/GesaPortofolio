@@ -28,7 +28,7 @@ export const experienceData = [
 ];
 
 import AzaliaProject from "../assets/AzaliaProject.png";
-import StepUpProject from "../assets/StepUpProject.png";
+import StepUpProject from "../assets/StepUPProject.png";
 
 export const projectData = [
   {
