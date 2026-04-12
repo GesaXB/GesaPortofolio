@@ -39,7 +39,7 @@ export default function ProjectsSection() {
         </motion.p>
       </motion.div>
 
-      <div className="grid grid-cols-1 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projectData.map((project, index) => (
           <motion.article
             key={project.id}
@@ -50,6 +50,15 @@ export default function ProjectsSection() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{ y: -5 }}
           >
+            {project.image && (
+              <div className="mb-6 overflow-hidden rounded-md border border-gray-700/50 block">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-auto max-h-[250px] md:max-h-[300px] object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            )}
             <div className="flex justify-between items-start mb-3">
               <h2 className="text-xl text-green-400">{project.title}</h2>
               {project.github && (
@@ -68,8 +77,8 @@ export default function ProjectsSection() {
             </div>
 
             <p className="text-gray-400 mb-4">
-              {project.description.split(/(React|Node\.js|MongoDB|Express|Spotify API)/g).map((part, i) =>
-                /React|Node\.js|MongoDB|Express|Spotify API/.test(part) ? (
+              {project.description.split(/(React|Node\.js|MongoDB|Express|Spotify API|Next\.js|TypeScript|Prisma)/g).map((part, i) =>
+                /React|Node\.js|MongoDB|Express|Spotify API|Next\.js|TypeScript|Prisma/.test(part) ? (
                   <span key={i} className="text-primary-white">{part}</span>
                 ) : (
                   part
@@ -103,7 +112,7 @@ export default function ProjectsSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View Project
+                {!project.github ? "View Live Project" : "View Project"}
                 <svg
                   className="w-4 h-4 transition-transform group-hover/link:translate-x-1"
                   fill="none"
@@ -114,7 +123,7 @@ export default function ProjectsSection() {
                 </svg>
               </a>
 
-              {project.demo && (
+              {(project.demo && project.github) && (
                 <a
                   href={project.demo}
                   className="text-gray-400 hover:text-green-300 text-sm flex items-center gap-1"

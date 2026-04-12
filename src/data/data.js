@@ -27,22 +27,28 @@ export const experienceData = [
   }
 ];
 
+import AzaliaProject from "../assets/AzaliaProject.png";
+import StepUpProject from "../assets/StepUpProject.png";
+
 export const projectData = [
   {
     id: 1,
-    title: "Spotify Data Visualizer",
-    description: "A responsive dashboard that connects to the Spotify API to display personalized listening statistics and trends, built with React for the frontend and Express.js for backend API handling.",
-    tags: ["React", "Express.js", "Spotify API", "Chart.js"],
-    link: "#",
-    github: "#",
-    demo: "#"
+    title: "TK Azalia - Kindergarten & PPDB",
+    description: "A comprehensive kindergarten school website featuring an integrated PPDB (Student Admission) system built with Next.js, TypeScript, and Prisma.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "ChartJs"],
+    link: "https://www.tkazalia.sch.id/",
+    github: "",
+    demo: "https://www.tkazalia.sch.id/",
+    image: AzaliaProject
   },
   {
     id: 2,
-    title: "E-commerce Analytics Platform",
-    description: "Full-stack business intelligence tool for e-commerce stores featuring real-time sales analytics, inventory management, and customer behavior insights using MongoDB's aggregation framework.",
-    tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-    link: "#",
-    github: "#"
+    title: "StepUp - Shoe E-Commerce",
+    description: "A modern and responsive shoe e-commerce platform featuring an editorial-style UI/UX, product catalog, and reliable checkout flow built with Next.js, TypeScript, and Prisma.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+    link: "https://github.com/GesaXB/stepUp",
+    github: "https://github.com/GesaXB/stepUp",
+    demo: "https://stepup-red.vercel.app/",
+    image: StepUpProject
   }
 ];

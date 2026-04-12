@@ -214,14 +214,6 @@ export default function Navbar() {
             </motion.a>
           ))}
         </motion.div>
-        <motion.p
-          className="text-xs text-gray-500"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-        >
-          Built with React & Tailwind CSS | Optimized for performance and accessibility
-        </motion.p>
       </motion.div>
     </div>
   );

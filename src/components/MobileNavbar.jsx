@@ -148,11 +148,10 @@ export default function MobileNavbar() {
                         variants={itemVariants}
                       >
                         <motion.button
-                          className={`text-2xl font-medium w-full text-left ${
-                            activeSection === sectionId
-                              ? 'text-green-400'
-                              : 'text-gray-400 hover:text-gray-200'
-                          } transition-colors`}
+                          className={`text-2xl font-medium w-full text-left ${activeSection === sectionId
+                            ? 'text-green-400'
+                            : 'text-gray-400 hover:text-gray-200'
+                            } transition-colors`}
                           onClick={() => handleNavClick(item)}
                           whileHover={{ x: 5 }}
                           whileTap={{ scale: 0.98 }}
@@ -187,9 +186,6 @@ export default function MobileNavbar() {
                     </motion.a>
                   ))}
                 </div>
-                <p className="text-xs text-gray-500">
-                  Built with React & Tailwind CSS
-                </p>
               </motion.div>
             </div>
           </motion.div>

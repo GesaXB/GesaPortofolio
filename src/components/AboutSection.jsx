@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-32 px-8 sm:px-16 md:px-24 lg:px-32">
+    <section id="about" className="min-h-[calc(100vh-4rem)] md:min-h-0 py-12 md:py-32 px-8 sm:px-16 md:px-24 lg:px-32 flex items-center">
       <div className="max-w-4xl mx-auto">
         <motion.div
           className="flex items-center mb-12"
@@ -59,11 +59,11 @@ export default function AboutSection() {
                   "JavaScript",
                   "React",
                   "Node.js",
-                  "Solidty",
                   "Laravel",
                   "MongoDB",
+                  "PostgreSQL",
                   "Tailwind CSS",
-                  "Git/GitHub",
+                  "Git / GitHub",
                   "Figma",
                   "Python"
                 ].map((tech, i) => (
