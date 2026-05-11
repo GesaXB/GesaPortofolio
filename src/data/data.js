@@ -48,7 +48,7 @@ export const projectData = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
     link: "https://github.com/GesaXB/stepUp",
     github: "https://github.com/GesaXB/stepUp",
-    demo: "",
+    demo: "https://step-up-dun.vercel.app/",
     image: StepUpProject
   }
 ];
