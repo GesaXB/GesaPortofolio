@@ -28,6 +28,7 @@ export const experienceData = [
 ];
 
 import AzaliaProject from "../assets/AzaliaProject.png";
+import NusaAIProject from "../assets/NusaAI.png";
 import StepUpProject from "../assets/StepUPProject.png";
 
 export const projectData = [
@@ -45,10 +46,20 @@ export const projectData = [
     id: 2,
     title: "StepUp - Shoe E-Commerce",
     description: "A modern and responsive shoe e-commerce platform featuring an editorial-style UI/UX, product catalog, and reliable checkout flow built with Next.js, TypeScript, and Prisma.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+    tags: ["Next.ts", "TypeScript", "Tailwind CSS", "Prisma"],
     link: "https://github.com/GesaXB/stepUp",
     github: "https://github.com/GesaXB/stepUp",
     demo: "https://step-up-dun.vercel.app/",
     image: StepUpProject
+  },
+  {
+    id: 3,
+    title: "NusaAI - AI For Study",
+    description: "NusaAI is a modern AI-powered study assistant built with Next.js Supabase Prisma ORM and OpenRouter to help students learn faster through AI chat, PDF summarization, and smart quiz generation with a clean and responsive user experience.",
+    tags: ["Next.ts", "Openrouter", "Tailwind Css", "Open AI Api", "Prisma"],
+    link: "https://github.com/GesaXB/NusaAi",
+    demo: "https://nusa-ai-nine.vercel.app/",
+    github: "https://github.com/GesaXB/NusaAi",
+    image: NusaAIProject
   }
 ];
