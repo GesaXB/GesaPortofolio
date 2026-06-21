@@ -56,9 +56,9 @@ export default function AboutSection() {
               <h3 className="text-gray-300 font-medium mb-4">Technologies I'm learning:</h3>
               <div className="grid grid-cols-2 gap-2">
                 {[
-                  "JavaScript",
+                  "JavaScript / Typescript",
                   "React",
-                  "Node.js",
+                  "Go",
                   "Laravel",
                   "MongoDB",
                   "PostgreSQL",

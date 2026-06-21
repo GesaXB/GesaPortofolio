@@ -12,7 +12,7 @@ export default function Footer() {
     >
       <div className="max-w-3xl mx-auto">
         <p className="text-gray-500 text-xs">
-          Built with passion • © {new Date().getFullYear()} • All text in <span className="text-gray-400">Inter</span> typeface
+          Built with passion • © {new Date().getFullYear()} • Geisha <span className="text-gray-400"></span>
         </p>
       </div>
     </motion.footer>

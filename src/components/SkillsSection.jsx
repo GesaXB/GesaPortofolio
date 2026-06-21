@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaDocker } from "react-icons/fa";
-import { SiTypescript, SiJavascript, SiTailwindcss, SiGraphql, SiMongodb, SiPostgresql, SiJest, SiLaravel, SiPython, SiNextdotjs, SiExpress } from "react-icons/si";
+import { SiTypescript, SiJavascript, SiTailwindcss, SiGraphql, SiMongodb, SiPostgresql, SiJest, SiLaravel, SiPython, SiNextdotjs, SiExpress, SiGo } from "react-icons/si";
 
 export default function SkillsSection() {
   const skills = [
@@ -22,6 +22,7 @@ export default function SkillsSection() {
       items: [
         { name: "Node.js", icon: <FaNodeJs /> },
         { name: "Express.js", icon: <SiExpress /> },
+        { name: "Go", icon: <SiGo/>},
         { name: "Python", icon: <SiPython /> },
         { name: "MongoDB", icon: <SiMongodb /> },
         { name: "PostgreSQL", icon: <SiPostgresql /> },

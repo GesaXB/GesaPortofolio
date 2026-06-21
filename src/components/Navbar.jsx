@@ -125,7 +125,7 @@ export default function Navbar() {
             visible: { opacity: 1 }
           }}
         >
-          Creating responsive, performant web applications with modern technologies including React, Node.js, and MongoDB. Passionate about clean code and intuitive user experiences.
+          Building responsive, high-performance web applications using React, Laravel, and Go. Focused on clean code, seamless UX, and AI integration.
         </motion.p>
 
         <nav className="space-y-2">
