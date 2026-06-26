@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Helmet } from 'react-helmet';
+import { BsBehance } from "react-icons/bs";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 export default function Navbar() {
@@ -52,6 +53,11 @@ export default function Navbar() {
       icon: <FiGithub size={20} />,
       url: "https://github.com/GesaXB",
       label: "GitHub Profile"
+    },
+    {
+      icon: <BsBehance size={20}/>,
+      url: "https://www.behance.net/gesaaprle",
+      label: "Behance Profile"
     },
     {
       icon: <FiLinkedin size={20} />,
