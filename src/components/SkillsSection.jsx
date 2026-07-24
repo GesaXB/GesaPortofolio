@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaDocker } from "react-icons/fa";
-import { SiTypescript, SiJavascript, SiTailwindcss, SiGraphql, SiMongodb, SiPostgresql, SiJest, SiLaravel, SiPython, SiNextdotjs, SiExpress, SiGo } from "react-icons/si";
+import { FaFigma, FaGitAlt, FaNodeJs, FaReact } from "react-icons/fa";
+import { SiExpress, SiGo, SiJavascript, SiLaravel, SiMongodb, SiNextdotjs, SiPostgresql, SiPython, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 export default function SkillsSection() {
   const skills = [
@@ -22,7 +22,7 @@ export default function SkillsSection() {
       items: [
         { name: "Node.js", icon: <FaNodeJs /> },
         { name: "Express.js", icon: <SiExpress /> },
-        { name: "Go", icon: <SiGo/>},
+        { name: "Go", icon: <SiGo /> },
         { name: "Python", icon: <SiPython /> },
         { name: "MongoDB", icon: <SiMongodb /> },
         { name: "PostgreSQL", icon: <SiPostgresql /> },
@@ -39,7 +39,8 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section id="skills" className="py-16 px-6 sm:px-12 md:px-20 lg:px-28">
+    <section id="skills" className="px-6 py-20 sm:px-12 md:px-20 lg:px-28">
+      <div className="mx-auto max-w-7xl">
       <motion.div
         className="mb-12"
         initial={{ opacity: 0 }}
@@ -48,15 +49,15 @@ export default function SkillsSection() {
         transition={{ duration: 0.5 }}
       >
         <div className="flex items-center">
-          <span className="text-primary-white text-2xl font-mono mr-4">04.</span>
+          <span className="mr-4 text-2xl font-mono text-primary-white">04.</span>
           <h1 className="text-3xl font-bold text-gray-100">
             Technical <span className="text-green-400">Skillset</span>
           </h1>
-          <div className="ml-6 h-px bg-gray-800 flex-1"></div>
+          <div className="ml-6 h-px flex-1 bg-gray-800"></div>
         </div>
 
         <motion.p
-          className="mt-6 text-gray-400 max-w-3xl leading-relaxed"
+          className="mt-6 max-w-3xl leading-relaxed text-gray-400"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -69,55 +70,50 @@ export default function SkillsSection() {
         </motion.p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid gap-6 md:grid-cols-3">
         {skills.map((skillCategory, index) => (
           <motion.article
             key={index}
-            className="group relative bg-gray-800/50 rounded-xl p-6 hover:bg-gray-800/70 transition-all border border-gray-800/50 hover:border-green-400/20"
+            className="group rounded-2xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_8px_30px_rgba(0,0,0,0.14)] transition-all duration-300 hover:-translate-y-1 hover:border-green-400/20"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            whileHover={{ y: -5 }}
+            whileHover={{ y: -4 }}
           >
-            <div className="flex items-center gap-3 mb-6">
-              <span className="text-green-400">{skillCategory.icon}</span>
-              <h2 className="text-xl font-semibold text-gray-100">{skillCategory.category}</h2>
+            <div className="mb-6 flex items-center gap-3">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-green-400/10 text-green-400">
+                {skillCategory.icon}
+              </span>
+              <div>
+                <h2 className="text-lg font-semibold text-gray-100">{skillCategory.category}</h2>
+                <p className="text-sm text-gray-500">Core tools</p>
+              </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-3">
+            <div className="flex flex-wrap gap-2">
               {skillCategory.items.map((skill, i) => (
                 <motion.div
                   key={i}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-gray-900/30 hover:bg-gray-900/50 transition-colors"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-gray-950/60 px-3 py-2 text-sm text-gray-300"
                   whileHover={{ x: 3 }}
                   aria-label={`Skill: ${skill.name}`}
                 >
                   {skill.icon && (
-                    <span className="text-green-400 text-lg flex-shrink-0">
+                    <span className="flex-shrink-0 text-green-400">
                       {skill.icon}
                     </span>
                   )}
-                  <span className="text-gray-300 text-sm font-medium truncate">
-                    {skill.name.split(' ').map((word, i) =>
-                      ['API', 'CI/CD'].includes(word) ? (
-                        <span key={i} className="text-primary-white">{word} </span>
-                      ) : (
-                        word + ' '
-                      )
-                    )}
-                  </span>
+                  <span>{skill.name}</span>
                 </motion.div>
               ))}
             </div>
-
-            <div className="absolute inset-0 -z-10 bg-gradient-to-br from-green-400/10 to-transparent rounded-xl opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-300"></div>
           </motion.article>
         ))}
       </div>
 
       <motion.div
-        className="mt-12 text-gray-400 max-w-3xl leading-relaxed"
+        className="mt-12 max-w-3xl leading-relaxed text-gray-400"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -129,6 +125,7 @@ export default function SkillsSection() {
           technical knowledge with <span className="text-primary-white">user experience considerations</span> to deliver optimal solutions.
         </p>
       </motion.div>
+      </div>
     </section>
   );
 }
