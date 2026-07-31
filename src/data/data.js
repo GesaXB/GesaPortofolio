@@ -28,6 +28,7 @@ export const experienceData = [
 ];
 
 import AzaliaProject from "../assets/AzaliaProject.png";
+import ManageLibary from "../assets/BookManage.png";
 import NusaAIProject from "../assets/NusaAI.png";
 import StepUpProject from "../assets/StepUPProject.png";
 
@@ -61,5 +62,16 @@ export const projectData = [
     demo: "https://nusa-ai-nine.vercel.app/",
     github: "https://github.com/GesaXB/NusaAi",
     image: NusaAIProject
+  },
+  {
+    id: 4,
+    title: "ManageBooks - Library Management System",
+    description:
+      "A modern and responsive library management system designed to manage books, authors, and categories through an intuitive dashboard interface. Built with React, TypeScript, and Tailwind CSS with a focus on clean UI, reusable components, and efficient data management.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "React Router", "REST API"],
+    link: "https://libary-management-frontend-gamma.vercel.app/",
+    demo: "https://libary-management-frontend-gamma.vercel.app/",
+    github: "https://github.com/GesaXB/LibayGoManagement",
+    image: ManageLibary
   }
 ];
