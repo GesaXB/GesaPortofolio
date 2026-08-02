@@ -58,7 +58,6 @@ export const projectData = [
     title: "NusaAI - AI For Study",
     description: "NusaAI is a modern AI-powered study assistant built with Next.js Supabase Prisma ORM and OpenRouter to help students learn faster through AI chat, PDF summarization, and smart quiz generation with a clean and responsive user experience.",
     tags: ["Next.ts", "Openrouter", "Tailwind Css", "Open AI Api", "Prisma"],
-    link: "https://github.com/GesaXB/NusaAi",
     demo: "https://nusa-ai-nine.vercel.app/",
     github: "https://github.com/GesaXB/NusaAi",
     image: NusaAIProject
@@ -69,7 +68,6 @@ export const projectData = [
     description:
       "A modern and responsive library management system designed to manage books, authors, and categories through an intuitive dashboard interface. Built with React, TypeScript, and Tailwind CSS with a focus on clean UI, reusable components, and efficient data management.",
     tags: ["React", "TypeScript", "Tailwind CSS", "React Router", "REST API"],
-    link: "https://libary-management-frontend-gamma.vercel.app/",
     demo: "https://libary-management-frontend-gamma.vercel.app/",
     github: "https://github.com/GesaXB/LibayGoManagement",
     image: ManageLibary
